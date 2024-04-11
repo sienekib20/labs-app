@@ -38,6 +38,7 @@
 
 <?= partials('nav.back-to-top') ?>
 <?= partials('nav.dropdown') ?>
+<?= partials('leitor.bottom-leitor') ?>
 
 <script>
     $(window).scroll(function(e) {

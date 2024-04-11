@@ -55,27 +55,55 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-lg-6">
-                            <span class="card-heading">Produzidos por nós</span>
-                            <small class="text-muted">Temos a uma voz no mercado, os nosso produtos falam por si</small>
+                            <h4 class="card-heading d-block">Produzidos por nós</h4>
+                            <span class="text-muted d-block" style="margin-top: -10px;">Temos a uma voz no mercado, os nosso produtos falam por si</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="card">
+        <div class="card my-4">
             <div class="card-contain">
                 <div class="container">
                     <div class="row">
+                        <div class="col-12 my-4 d-flex ai-end jc-end">
+                            <span class="dir bi bi-chevron-left"></span>
+                            <span class="dir bi bi-chevron-right"></span>
+                        </div>
                         <div class="col-12">
-                            Produtos
+                            <div class="products">
+                                <a href="" class="product" name="open-bottom-leitor">
+                                    <div class="product-img">
+                                        <img src="<?= asset('img/bg-1.jpg') ?>" alt="">
+                                    </div>
+                                    <h3 class="product-title card-heading d-block text-black mt-3">Tudo que eu quero</h3>
+                                    <span class="text-muted d-block" style="margin-top: -10px; margin-bottom: -4px">Artista name | Album atula - Track 1</span>
+                                    <small class="text-muted">Produzido em Março 2024</small>
+                                </a>
+                                <a href="" class="product" name="open-bottom-leitor">
+                                    <div class="product-img">
+                                        <img src="<?= asset('img/bg-1.jpg') ?>" alt="">
+                                    </div>
+                                    <h3 class="product-title card-heading d-block text-black mt-3">Tudo que eu quero</h3>
+                                    <span class="text-muted d-block" style="margin-top: -10px; margin-bottom: -4px">Artista name | Album atula - Track 1</span>
+                                    <small class="text-muted">Produzido em Março 2024</small>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 my-4">
+                            <div class="dots-count">
+                                <span class="dots active"></span>
+                                <span class="dots"></span>
+                                <span class="dots"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="card">
+        <div class="card mt-5">
             <div class="card-header">
                 <div class="container">
                     <div class="row">
