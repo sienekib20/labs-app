@@ -183,6 +183,17 @@ if (!function_exists('asset')) :
 
 endif;
 
+if (!function_exists('media')) :
+
+    function media($media, $format = 'mp3')
+    {
+        $media = str_replace('.', '/', $media);
+
+        return "/medias/$media" . "." . $format;
+    }
+
+endif;
+
 if (!function_exists('__template')) :
 
     function __template(string $path = '')

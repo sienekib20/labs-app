@@ -103,26 +103,30 @@
             </div>
         </div>
 
-        <div class="card mt-5">
+        <div class="card my-5">
             <div class="card-header">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-lg-6">
-                            <span class="card-heading">O que produzimos</span>
-                            <small class="text-muted">Variedade de estilos para alcançar o desejo máximo de produção musical.</small>
+                            <h4 class="text-black">O que produzimos</h4>
+                            <span class="text-muted d-block" style="margin-top: -5px;">Variedade de estilos para alcançar o desejo máximo de produção musical.</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="card">
             <div class="card-contain">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12">
-                            Estilos produzidos
-                        </div>
+                        <?php for ($i = 0; $i < 9; $i++) : ?>
+                            <div class="col-lg-4">
+                                <div class="produced">
+                                    <div class="produced-img">
+                                        <img src="<?= asset('img/style/s-' . $i+1 . '.jpg') ?>" alt="">
+                                    </div>
+                                    <span class="produced-style">Rumba</span>
+                                </div>
+                            </div>
+                        <?php endfor; ?>
                     </div>
                 </div>
             </div>
@@ -136,7 +140,7 @@
                             <h4 class="text-black">Respostas para as Tuas Perguntas Mais Frequentes</h2>
                             </h4>
                             <span class="text-black d-block" style="margin-top: -10px">Ainda tens dúvidas? Nós temos respostas para as tuas preocupações.</span>
-                            
+
                         </div>
                         <div class="col-12 col-lg-8 mx-auto my-4">
                             <div class="fask-filter-contain">
