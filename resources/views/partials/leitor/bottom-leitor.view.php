@@ -5,7 +5,7 @@
                 <span class="card-heading text-white d-block" style="margin-bottom: -5px;">Tudo que eu Quero</span>
                 <small class="text-muted">Album albumname | <a href="<?= route('playlist', 1) ?>">Artista name</a></small>
             </div>
-            <div class="col-2">
+            <div class="col-2 mx-auto">
                 <div class="player-controls">
                     <a href="">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -45,17 +45,40 @@
 <input type="hidden" id="load_me" value="<?= media('tudo') ?>">
 
 <script>
-    var wavesurfer = Object.create(WaveSurfer);
+    //
 
-    wavesurfer.init({
-        container: document.querySelector('#timeline'),
-        waveColor: '#8a8a8a',
-        progressColor: 'white'
+    $(document).ready(function(e) {
+        surfThisAudio($('#load_me').val());
+
+        $('.player-close').click(function(e) {
+            e.preventDefault();
+            $('.inbottom-player').removeClass('revealed');
+        });
     });
 
-    wavesurfer.on('ready', function() {
-        wavesurfer.play();
-    });
 
-    wavesurfer.load($('#load_me').val());
+    function surfThisAudio(item) {
+        var wavesurfer = Object.create(WaveSurfer);
+
+        wavesurfer.init({
+            container: document.querySelector('#timeline'),
+            waveColor: '#8a8a8a',
+            progressColor: 'white',
+            /*plugins: [
+                Hover.create({
+                    lineColor: '#ff0000',
+                    lineWidth: 2,
+                    labelBackground: '#555',
+                    labelColor: '#fff',
+                    labelSize: '11px',
+                }),
+            ],*/
+        });
+
+        wavesurfer.on('ready', function() {
+            wavesurfer.play();
+        });
+
+        wavesurfer.load(item);
+    }
 </script>
