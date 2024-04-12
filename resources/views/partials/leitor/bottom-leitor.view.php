@@ -1,7 +1,7 @@
 <div class="inbottom-player">
     <div class="container">
         <div class="row">
-            <div class="col-3">
+            <div class="col-12 col-sm-3">
                 <span class="card-heading text-white d-block" style="margin-bottom: -5px;">Tudo que eu Quero</span>
                 <small class="text-muted">Album albumname | <a href="<?= route('playlist', 1) ?>">Artista name</a></small>
             </div>
@@ -29,13 +29,15 @@
                     </a>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 d-none d-lg-block">
-                <div id="timeline"></div>
-            </div>
             <div class="col-1 ml-auto">
                 <div class="player-close">
                     &times;
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div id="timeline"></div>
             </div>
         </div>
     </div>
