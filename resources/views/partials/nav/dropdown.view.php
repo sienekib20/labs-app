@@ -1,9 +1,9 @@
 <div class="navbar-dropdown">
     <div class="container">
         <div class="dropitem">
-            <a href="" class="btn btn-danger">Entrar</a>
+            <a href="" class="btn btn-primary btn-block">Entrar</a>
         </div>
-        <div class="dropitem">
+        <div class="dropitem dv">
             <span class="text-muted">Novo por aqui?</span>
             <a href="">Criar conta</a>
         </div>

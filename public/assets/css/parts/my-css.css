@@ -32,9 +32,9 @@ body {
 }
 
 header {
-    top: -220px;
+    top: -60px;
     position: relative;
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     overflow-x: hidden;
 }
@@ -135,4 +135,8 @@ img {
 
 .dots-count .dots.active {
     background-color: #000;
+}
+
+.card-header {
+    padding: 1rem 0;
 }

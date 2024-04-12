@@ -1,6 +1,6 @@
 <?= partials('nav.links') ?>
 
-<nav class="navbar">
+<nav class="navbar active">
     <div class="container">
         <div class="alq-navbar-header">
             <span class="name">Labs</span>
@@ -15,10 +15,13 @@
             <div class="alq-nvitem">
                 <a href="" class="alq-nvlink">Comunidade</a>
             </div>
+            <div class="alq-nvitem">
+                <a href="" class="alq-nvlink">Planos</a>
+            </div>
             <div class="alq-nvitem ml-auto">
                 <a href="" class="alq-nvlink">Suporte</a>
             </div>
-            <div class="alq-nvitem">
+            <div class="alq-nvitem submenu">
                 <a href="" class="alq-nvlink">
                     <span class="bi bi-person-fill"></span>
                 </a>
@@ -41,7 +44,12 @@
 <?= partials('leitor.bottom-leitor') ?>
 
 <script>
-    $(window).scroll(function(e) {
+    /*$(window).scroll(function(e) {
         ($(this).scrollTop() > 100) ? $('.navbar').addClass('active'): $('.navbar').removeClass('active');
+    });*/
+
+    $('.submenu a').click(function(e) {
+        e.preventDefault();
+        $('.navbar-dropdown').toggleClass('active');
     });
 </script>

@@ -17,16 +17,16 @@
 
         <header>
             <div class="sliders">
-                <div class="slider-item">
+                <div class="slider-item active">
                     <div class="slider-overlay"></div>
-                    <img src="<?= asset('img/studio-hero-1024x683.jpg') ?>" alt="">
+                    <img src="<?= asset('img/stock-picture-istock-870199640-sound-control.jpeg') ?>" alt="">
                     <div class="slider-caption">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-6">
+                                <div class="col-12 col-lg-8">
                                     <h1 class="card-heading">Feito para <span class="sd">produzir</span> Músicas</h1>
-                                    <span>Uma produção musical ao seu alcance, basta clicar e tudo se resolve por ti.</span>
-                                    <a href="" class="btn btn-outline-dark">Experimentar</a>
+                                    <span>Uma produção musical ao seu alcance, basta clicar e tudo se resolve por ti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, exercitationem</span>
+                                    <a href="" class="btn btn-outline-dark slider-btn">Experimentar</a>
                                 </div>
                             </div>
                         </div>
@@ -34,14 +34,14 @@
                 </div>
                 <div class="slider-item">
                     <div class="slider-overlay"></div>
-                    <img src="<?= asset('img/stock-picture-istock-870199640-sound-control.jpeg') ?>" alt="">
+                    <img src="<?= asset('img/bg-1.jpg') ?>" alt="">
                     <div class="slider-caption">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-6">
-                                    <h3 class="card-heading">Uma produção de <span class="sd">qualidade</span> Máxima</h3>
-                                    <span>Você sonha, deseja e realiza o seu pedido, e nós concretizamos isso pra você.</span>
-                                    <a href="" class="btn btn-outline-dark">Experimentar</a>
+                                <div class="co-12 col-lg-8">
+                                    <h1 class="card-heading">Uma produção de <span class="sd">qualidade</span> Máxima</h1>
+                                    <span>Você sonha, deseja e realiza o seu pedido, e nós concretizamos isso pra você. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, suscipit</span>
+                                    <a href="" class="btn btn-outline-dark slider-btn">Experimentar</a>
                                 </div>
                             </div>
                         </div>
@@ -121,32 +121,37 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            Estiloas produzidos
+                            Estilos produzidos
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="card">
-            <div class="card-header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-lg-6">
-                            <span class="card-heading">Faqs</span>
-                            <small class="text-muted">Respostas de Perguntas Frequentes.</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
+        <div class="card my-5">
             <div class="card-contain">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12">
-                            Faqs
+                        <div class="col-12 col-lg-6">
+                            <h4 class="card-heading">Perguntas mais Frequentes</h4>
+                            <span class="text-black d-block" style="margin-top: -10px">Continuas com dúvidas. Respondemos às tuas preocupações</span>
+                        </div>
+                        <div class="col-12 col-lg-6 mt-5 mt-lg-0">
+                            <div class="fask">
+                                <?php for ($i = 0; $i < 4; $i++) : ?>
+                                    <div class="fask-item">
+                                        <div class="fask-top">
+                                            <button type="button" class="fask-expander">
+                                                <h5 class="question">Como faço os meus pagamentos ?</h5>
+                                                <span class="bi bi-plus" role="icon"></span>
+                                            </button>
+                                        </div>
+                                        <div class="fask-contain">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi repellat eos quae quo optio! Rem, distinctio maxime quod, atque, ab inventore consequatur ullam earum quibusdam unde tempora expedita nesciunt dolorem?</p>
+                                        </div>
+                                    </div>
+                                <?php endfor; ?>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -192,7 +197,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card mb-5">
             <div class="card-contain">
                 <div class="container">
                     <div class="row">
@@ -204,6 +209,8 @@
             </div>
         </div>
 
+        <div class="card mb-5"></div>
+
 
 
         <?= partials('nav.footer') ?>
@@ -214,3 +221,6 @@
 </body>
 
 </html>
+
+<script src="<?= asset('js/fask/index.js') ?>"></script>
+<script src="<?= asset('js/sliders/index.js') ?>"></script>

@@ -4,6 +4,8 @@ namespace Sienekib\Mehael\Database\Concerns;
 
 use PDO;
 use PDOException;
+use Spatie\Ignition\Ignition;
+use Throwable;
 
 class Connection
 {

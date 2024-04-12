@@ -1,0 +1,76 @@
+.fask {
+    width: 100%;
+    position: relative;
+}
+
+.fask-item {
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #555;
+}
+
+.fask-item::after {
+    content: '';
+    top: 25%;
+    left: -2%;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    /*background-color: #07f;*/
+    border-radius: 10px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: top 0.15s ease-in-out, height 0.15s ease-in-out;
+    -o-transition: top 0.15s ease-in-out, height 0.15s ease-in-out;
+    transition: top 0.15s ease-in-out, height 0.15s ease-in-out;
+}
+
+.fask-item.active::after {
+    top: 0;
+    height: 100%;
+}
+
+.fask-item+.fask-item {
+    margin-top: 2rem;
+}
+
+.fask-expander {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    min-height: 1px;
+    /*padding-bottom: 0.375rem;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.fask-expander * {
+    pointer-events: none;
+}
+
+.fask-expander [role="icon"] {
+    font-size: 1.5rem;
+}
+
+.fask-contain {
+    height: 0;
+    overflow: hidden;
+    padding: 0.375rem 0.55rem;
+    -webkit-transition: height 0.15s ease-in-out;
+    -o-transition: height 0.15s ease-in-out;
+    transition: height 0.15s ease-in-out;
+}
+
+.fask-contain.active {
+    height: auto;
+}

@@ -24,14 +24,14 @@
                 </div>
                 <div class="footer-contain">
                     <div class="social-links">
-                        <a href="" class="slink"> <span class="bi bi-facebook"></span> </a>
-                        <a href="" class="slink"> <span class="bi bi-instagram"></span> </a>
-                        <a href="" class="slink"> <span class="bi bi-tiktok"></span> </a>
-                        <a href="" class="slink"> <span class="bi bi-linkedin"></span> </a>
+                        <a href="#" class="slink"> <span class="bi bi-facebook"></span> </a>
+                        <a href="#" class="slink"> <span class="bi bi-instagram"></span> </a>
+                        <a href="#" class="slink"> <span class="bi bi-tiktok"></span> </a>
+                        <a href="#" class="slink"> <span class="bi bi-linkedin"></span> </a>
                     </div>
                 </div>
 
-                <span class="card-heading text-muted d-block mt-4">Newsletter</span>
+                <span class="card-heading text-white d-block mt-4">Newsletter</span>
                 <small class="text-muted d-block mb-4" style="margin-top: -3px;">Receba sempre as notificações e fique atualizado.</small>
                 <form action="" class="w-100">
                     <div class="input-group">
@@ -45,12 +45,12 @@
                 <span class="text-muted d-block mb-4" style="margin-top: -3px;">Serviços além da produção musical.</span>
                 <div class="footer-contain">
                     <div class="contain-items">
-                        <a href=""> <small class="bi bi-dot"></small> Desenvolvimento de software </a>
-                        <a href=""> <small class="bi bi-dot"></small> Direcao artística </a>
-                        <a href=""> <small class="bi bi-dot"></small> Makeup e tranças de cabelo </a>
-                        <a href=""> <small class="bi bi-dot"></small> Vendas de cosmeticos </a>
-                        <a href=""> <small class="bi bi-dot"></small> E muito mais... </a>
-                        <a href=""> <small class="bi bi-dot"></small> Mais informações </a>
+                        <a href="#"> <small class="bi bi-dot"></small> Desenvolvimento de software </a>
+                        <a href="#"> <small class="bi bi-dot"></small> Direcao artística </a>
+                        <a href="#"> <small class="bi bi-dot"></small> Makeup e tranças de cabelo </a>
+                        <a href="#"> <small class="bi bi-dot"></small> Vendas de cosmeticos </a>
+                        <a href="#"> <small class="bi bi-dot"></small> E muito mais... </a>
+                        <a href="#"> <small class="bi bi-dot"></small> Mais informações </a>
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@
             <div class="col-12">
                 <span class="text-white">&copy; <script>
                         document.write(new Date().getFullYear());
-                    </script> Todos os direitos reservados. | desenvolvido com ♥ por : <a href="" class="text-muted text-underline">sienekib</a> </span>
+                    </script> Todos os direitos reservados. | desenvolvido com ♥ por : <a href="tel: 949 901 787" class="text-muted text-underline">sienekib</a> </span>
             </div>
         </div>
     </div>

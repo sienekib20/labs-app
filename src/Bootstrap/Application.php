@@ -9,6 +9,7 @@ use Sienekib\Mehael\Http\Response;
 use Sienekib\Mehael\Router\Anotation\Route;
 use Sienekib\Mehael\Exceptions\Whoops;
 use Sienekib\Mehael\Support\Extensions;
+use Spatie\Ignition\Ignition;
 
 class Application
 {
@@ -20,6 +21,7 @@ class Application
 
     public function __construct()
     {
+        
         $this->request = new Request();
         $this->response = new Response();
         $this->route = new Route($this->request, $this->response);
@@ -27,16 +29,18 @@ class Application
         //$this->whoops = Whoops::lookUp();
         Extensions::load();
     }
-
+    
     public function start()
     {
         try {
             $this->connection->initDBConnection();
             
+
             $this->route->dispatch();
             session()->destroyFlash();
         } catch (\Exception $e) {
             //$this->whoops->handleException($e);
+            Ignition::make()->renderException($e);
         }
     }
 }

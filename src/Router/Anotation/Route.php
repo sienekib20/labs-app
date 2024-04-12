@@ -127,6 +127,7 @@ class Route
      */
     public function dispatch()
     {
+
         $found = -1;
         $positionRoute = -1;
         $key = 0;
@@ -159,7 +160,7 @@ class Route
                 }
             }
         }
-
+        
         if ($found > -1) {
             //dd($positionRoute, $found);
             return $this->dispatchRoute($positionRoute, static::$request, static::$response);

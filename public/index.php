@@ -1,5 +1,6 @@
 <?php
 
+
 use Sienekib\Mehael\Support\Session;
 
 /*
@@ -16,6 +17,7 @@ require __DIR__ . '/../vendor/autoload.php';
 |--------------------------------------------
 */
 \Spatie\Ignition\Ignition::make()->register();
+
 
 /*
 |--------------------------------------------
@@ -45,3 +47,4 @@ Session::start();
 
 // Startando a aplicação
 app()->start();
+

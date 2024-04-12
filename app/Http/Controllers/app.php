@@ -12,7 +12,6 @@ class app extends Controller
 	public function index()
 	{
 		$data = [];
-
 		// TODO: coloque o seu código
 
 		return view('titulo:site.index', compact('data'));
