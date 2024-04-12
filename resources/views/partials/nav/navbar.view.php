@@ -50,6 +50,16 @@
 
     $('.submenu a').click(function(e) {
         e.preventDefault();
+        e.stopPropagation(); // Impede a propagação do evento
         $('.navbar-dropdown').toggleClass('active');
+    });
+
+    $(document).click(function(event) {
+        var dropdown = $('.navbar-dropdown');
+        var target = $(event.target);
+        // Verifica se o clique foi fora do dropdown e se o dropdown está aberto
+        if (!dropdown.is(target) && dropdown.hasClass('active')) {
+            dropdown.removeClass('active');
+        }
     });
 </script>

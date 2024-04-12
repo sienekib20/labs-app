@@ -76,7 +76,7 @@
         });
 
         wavesurfer.on('ready', function() {
-            wavesurfer.play();
+            //wavesurfer.play();
         });
 
         wavesurfer.load(item);
