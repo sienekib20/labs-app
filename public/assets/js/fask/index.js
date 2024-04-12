@@ -8,7 +8,7 @@ $(document).ready(function (e) {
         var ourFather = $(this).parent().parent();
         ourFather.toggleClass('active');
 
-        $(this).find('[role="icon"]').toggleClass('bi-plus bi-dot');
+        $(this).find('[role="icon"]').toggleClass('bi-plus bi-dash');
         var nextParentBro = $(this).parent().next();
 
         if (!nextParentBro.hasClass('active')) {

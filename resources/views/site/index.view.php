@@ -34,7 +34,7 @@
                 </div>
                 <div class="slider-item">
                     <div class="slider-overlay"></div>
-                    <img src="<?= asset('img/bg-1.jpg') ?>" alt="">
+                    <img src="<?= asset('img/fl-studio-jfz4k06m3o6t93fj.jpg') ?>" alt="">
                     <div class="slider-caption">
                         <div class="container">
                             <div class="row">
@@ -129,14 +129,39 @@
         </div>
 
         <div class="card my-5">
+            <div class="card-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h4 class="text-black">Respostas para as Tuas Perguntas Mais Frequentes</h2>
+                            </h4>
+                            <span class="text-black d-block" style="margin-top: -10px">Ainda tens dúvidas? Nós temos respostas para as tuas preocupações.</span>
+                            
+                        </div>
+                        <div class="col-12 col-lg-8 mx-auto my-4">
+                            <div class="fask-filter-contain">
+                                <div class="fask-filter-dir d-none d-lg-flex">
+                                    <span class="bi bi-chevron-left"></span>
+                                </div>
+                                <div class="fask-filter">
+                                    <a href="" class="fask-filter-item active" data-target="fask-container-1">Geral</a>
+                                    <a href="" class="fask-filter-item" data-target="fask-container-2">Planos</a>
+                                    <a href="" class="fask-filter-item" data-target="fask-container-3">Pagamento</a>
+                                    <a href="" class="fask-filter-item" data-target="fask-container-4">Upload de áudios</a>
+                                    <a href="" class="fask-filter-item" data-target="fask-container-5">Outros</a>
+                                </div>
+                                <div class="fask-filter-dir d-none d-lg-flex">
+                                    <span class="bi bi-chevron-right"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="card-contain">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 col-lg-6">
-                            <h4 class="card-heading">Perguntas mais Frequentes</h4>
-                            <span class="text-black d-block" style="margin-top: -10px">Continuas com dúvidas. Respondemos às tuas preocupações</span>
-                        </div>
-                        <div class="col-12 col-lg-6 mt-5 mt-lg-0">
+                        <div class="col-12 col-lg-10 mx-auto">
                             <div class="fask">
                                 <?php for ($i = 0; $i < 4; $i++) : ?>
                                     <div class="fask-item">
