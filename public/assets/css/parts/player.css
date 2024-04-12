@@ -1,10 +1,11 @@
-.player-in-bottom {
+.inbottom-player {
     position: fixed;
-    z-index: 1980;
+    z-index: 999;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100px;
+    /*height: 100px;*/
+    padding: 1rem 0;
     background-color: #1C1D20;
     -webkit-transition: bottom 0.15s ease-in-out;
     -o-transition: bottom 0.15s ease-in-out;
@@ -15,38 +16,33 @@
     bottom: 0;
 }
 
-.player-in-bottom .container {
+
+.player-controls {
+    margin-left: 1rem;
+    color: #8a8a88;
+    font-size: 1.6rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 100%;
+    gap: 1rem;
 }
 
-.cover {
-    width: 50px;
-    height: 50px;
+.player-controls a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
     aspect-ratio: 1/1;
-    position: relative;
-    border-radius: 50%;
-}
-
-.cover img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
-    border-radius: 50%;
-}
-
-.player-controls {
-    margin-left: 1rem;
-    color: #8a8a88;
-    font-size: 1.6rem;
 }
 
 .player-controls a svg {
@@ -70,9 +66,10 @@
 }
 
 #timeline {
+    width: 100%;
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    height: 40px;
+    -ms-flex: 1;
+    flex: 1;
+    height: 50px;
     cursor: pointer;
 }
